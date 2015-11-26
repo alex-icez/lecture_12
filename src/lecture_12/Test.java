@@ -26,6 +26,7 @@ class MyFrame extends JFrame {
 		panel = new MyPanel();
 		add(panel);
 		setVisible(true);
+		repaint();
 	}
 }
 
