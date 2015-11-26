@@ -36,9 +36,13 @@ class Gnome extends JFrame {
 		});
 		
 		textField1 = new JTextField(50);
+		textField1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				label1.setText(textField1.getText());
+			}
+		});
 		
-		
-		
+		add(textField1);
 		
 		
 		add(button1);
