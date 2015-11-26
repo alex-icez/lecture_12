@@ -1,6 +1,7 @@
 package lecture_12;
 
 import java.awt.Graphics;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -8,15 +9,12 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-class MyListener implements MouseMotionListener, MouseListener {
+class MyListener extends MouseAdapter {
 	Panel panel;
+	
 	public MyListener(Panel panel) {
 		this.panel = panel;
 	}
-	
-	public void mouseDragged(MouseEvent e) {
-	}
-	
 
 	public void mouseMoved(MouseEvent e) {
 		panel.x = e.getX();
