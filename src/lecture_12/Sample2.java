@@ -23,9 +23,6 @@ class Gnome extends JFrame {
 	private JCheckBox b1;
 	private JList<Integer> list;
 	
-	
-	
-	
 	public Gnome() {
 		setTitle("Gnome");
 		setSize(640, 480);
