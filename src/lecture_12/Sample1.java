@@ -1,7 +1,12 @@
 package lecture_12;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
+
+class Panel extends JPanel {
+	int x, y;
+}
 
 class Frame extends JFrame {
 	public Frame() {
