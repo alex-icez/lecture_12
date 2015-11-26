@@ -14,14 +14,12 @@ import javax.swing.JTextField;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 
-class 
-
 class Gnome extends JFrame {
 	private JLabel label1;
 	private JButton button1;
 	private JTextField textField1;
 	private JCheckBox b1;
-	private JList<Integer>
+	private JList<Integer> list;
 	
 	
 	
