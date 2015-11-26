@@ -14,7 +14,8 @@ class MyPanel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponents(g);
 		g.setColor(Color.BLACK);
-		g.drawRect(10, 10, 100, 100);
+		g.drawRect(10, 10, 100, 200);
+		g.drawString(, x, y);
 	}
 }
 
