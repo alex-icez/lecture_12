@@ -60,7 +60,6 @@ class Frame extends JFrame {
 				repaint();
 			}
 		});
-		
 		setVisible(true);
 	}
 }
