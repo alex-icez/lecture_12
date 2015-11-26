@@ -9,17 +9,22 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JTextField;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 
-
+class 
 
 class Gnome extends JFrame {
 	private JLabel label1;
 	private JButton button1;
 	private JTextField textField1;
 	private JCheckBox b1;
+	private JList<Integer>
+	
+	
+	
 	
 	public Gnome() {
 		setTitle("Gnome");
@@ -55,8 +60,11 @@ class Gnome extends JFrame {
 				label1.setText(label1.getText() + " " + f);
 			}
 		});
-		
 		add(b1);
+		
+		
+		
+		
 		
 		
 		add(button1);
