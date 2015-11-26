@@ -14,7 +14,6 @@ class Gnome extends JFrame {
 
 public class Sample2 {
 	public static void main(String[] args) {
-		
-
+		new Gnome();
 	}
 }
