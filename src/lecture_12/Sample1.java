@@ -7,6 +7,22 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+class MyListener implements MouseMotionListener {
+	Panel panel;
+	public MyListener(Panel panel) {
+		this.panel = panel;
+	}
+	
+	public void mouseDragged(MouseEvent e) {
+	}
+	
+
+	public void mouseMoved(MouseEvent e) {
+		panel.x = e.getX();
+		panel.y = e.getY();
+		panel.repaint();
+	}	
+}
 
 class Panel extends JPanel {
 	int x, y;
@@ -31,22 +47,7 @@ class Frame extends JFrame {
 	}
 }
 
-class MyListener implements MouseMotionListener {
-	Panel panel;
-	public MyListener(Panel panel) {
-		this.panel = panel;
-	}
-	
-	public void mouseDragged(MouseEvent e) {
-	}
-	
 
-	public void mouseMoved(MouseEvent e) {
-		panel.x = e.getX();
-		panel.y = e.getY();
-		panel.repaint();
-	}	
-}
 
 public class Sample1 {
 	public static void main(String[] args) {
