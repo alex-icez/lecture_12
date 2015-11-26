@@ -1,6 +1,7 @@
 package lecture_12;
 
 import java.awt.Graphics;
+import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 import javax.swing.JFrame;
@@ -16,6 +17,8 @@ class Panel extends JPanel {
 }
 
 class Frame extends JFrame {
+	Panel panel;
+	
 	public Frame() {
 		setSize(640, 480);
 		setVisible(true);
@@ -28,6 +31,15 @@ class MyListener implements MouseMotionListener {
 		this.panel = panel;
 	}
 	
+	public void mouseDragged(MouseEvent e) {
+	}
+	
+
+	public void mouseMoved(MouseEvent e) {
+		panel.x = e.getX();
+		panel.y = e.getY();
+		panel.repaint();
+	}	
 }
 
 public class Sample1 {
