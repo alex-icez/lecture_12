@@ -1,6 +1,7 @@
 package lecture_12;
 
 import java.awt.Graphics;
+import java.awt.event.MouseMotionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,6 +20,10 @@ class Frame extends JFrame {
 		setSize(640, 480);
 		setVisible(true);
 	}
+}
+
+class MyListener implements MouseMotionListener {
+	
 }
 
 public class Sample1 {
