@@ -34,7 +34,7 @@ class MyFrame extends JFrame {
 		setSize(640, 480);
 		panel = new MyPanel();
 		setUndecorated(true);
-		setBackground(new Color(0,0,255,100));
+		setBackground(new Color(0,0,255,10));
 		add(panel);
 		setVisible(true);
 		repaint();
