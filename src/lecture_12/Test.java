@@ -24,7 +24,7 @@ public class Test {
 			}
 		});
 		Integer arr[] = {1,2,3,4,5};
-		Arrays.sort(arr, (a, b) -> a - b);
+		Arrays.sort(arr, (a, b) -> b - a);
 		
 	}
 }
