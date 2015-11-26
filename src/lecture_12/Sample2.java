@@ -49,8 +49,10 @@ class Gnome extends JFrame {
 		
 		b1 = new JCheckBox("Insert!!");
 		b1.addActionListener(new ActionListener() {
+			boolean f = false;
 			public void actionPerformed(ActionEvent e) {
-				label1.setText(label1.getText() + " " + b1);
+				f = !f;
+				label1.setText(label1.getText() + " " + f);
 			}
 		});
 		
