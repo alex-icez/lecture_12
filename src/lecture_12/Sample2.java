@@ -1,10 +1,20 @@
 package lecture_12;
 
-public class Sample2 {
+import javax.swing.JFrame;
 
+
+
+class Gnome extends JFrame {
+	public Gnome() {
+		
+		
+		
+	}
+}
+
+public class Sample2 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
-
 }
