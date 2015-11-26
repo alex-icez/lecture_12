@@ -52,13 +52,13 @@ class Frame extends JFrame {
 				g.drawString("(" + x + ", " + y + ")", x, y);
 			}
 		});
+		
 		addMouseMotionListener(new MouseAdapter() {
-					public void mouseMoved(MouseEvent e) {
-						x = e.getX();
-						y = e.getY();
-						repaint();
-					}
-				});
+			public void mouseMoved(MouseEvent e) {
+				x = e.getX();
+				y = e.getY();
+				repaint();
+			}
 		});
 		
 		setVisible(true);
