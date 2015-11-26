@@ -14,7 +14,7 @@ class MyPanel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponents(g);
 		g.setColor(new Color(getWidth() % 256, getWidth() % 256, getHeight() % 256));
-		g.drawRect(10, 10, getWidth() / 4, getHeight() / 4);
+		g.fillRect(10, 10, getWidth() / 4, getHeight() / 4);
 		g.drawString("Hello World", getWidth() / 4, getHeight() / 4);
 		
 		
