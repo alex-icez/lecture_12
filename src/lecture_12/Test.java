@@ -14,8 +14,6 @@ class MyFrame extends JFrame {
 
 public class Test {
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(
-				() -> { }
-				);
+		SwingUtilities.invokeLater(() -> new MyFrame());
 	}
 }
