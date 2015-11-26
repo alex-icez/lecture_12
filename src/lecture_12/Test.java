@@ -2,6 +2,8 @@ package lecture_12;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Stroke;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -17,6 +19,8 @@ class MyPanel extends JPanel {
 		g.fillRect(10, 10, getWidth() / 4, getHeight() / 4);
 		g.drawString("Hello World", getWidth() / 4, getHeight() / 4);	
 		
+		Graphics2D g2 = (Graphics2D)g;
+		g2.setStroke();
 	}
 }
 
