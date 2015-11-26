@@ -1,6 +1,8 @@
 package lecture_12;
 
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,7 +25,12 @@ class Gnome extends JFrame {
 				JLabel.HORIZONTAL);
 		add(label1);
 		button1 = new JButton("Start");
-		button1.setRolloverSelectedIcon(new ImageIcon("/home/sasha/Картинки/1--69/5.jpg"));
+		button1.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				label1.setText("Diaaaa!!!");
+			}
+		});
 		
 		add(button1);
 		setVisible(true);
