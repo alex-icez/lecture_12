@@ -7,6 +7,8 @@ class MyFrame extends JFrame {
 	public MyFrame() {
 		this.setTitle("Окно в мир!!!");
 		this.setSize(640, 480);
+		
+		this.setVisible(true);
 	}
 }
 
