@@ -1,5 +1,8 @@
 package lecture_12;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -20,7 +23,9 @@ public class Test {
 				new MyFrame();
 			}
 		});
-		
+		int arr[] = {1,2,3,4,5};
+		Arrays.sort(arr, new Comparator<T>() {
+		});
 		
 	}
 }
