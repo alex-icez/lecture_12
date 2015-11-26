@@ -46,8 +46,12 @@ class Frame extends JFrame {
 	
 	public Frame() {
 		setSize(640, 480);
-		panel = new Panel();
-		add(panel);	
+		add(new JPanel() {
+			protected void paintComponent(Graphics g) {
+				super.paintComponent(g);
+				g.drawString("(" + x + ", " + y + ")", x, y);
+			}
+		});
 		setVisible(true);
 	}
 }
