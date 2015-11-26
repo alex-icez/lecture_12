@@ -5,7 +5,14 @@ import java.util.Comparator;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
+
+
+class MyPanel extends JPanel {
+	
+}
 
 class MyFrame extends JFrame {
 	public MyFrame() {
