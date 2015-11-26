@@ -29,7 +29,7 @@ class Gnome extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				label1.setText("Diaaaa!!!");
-				label1.setIcon(new ImageIcon("/home/sasha/Картинки/1--69/10.jpg"));
+				label1.setIcon(new ImageIcon("/home/sasha/Картинки/1--69/49.jpg"));
 			}
 		});
 		
