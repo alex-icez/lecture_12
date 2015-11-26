@@ -8,7 +8,7 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+/*
 class MyListener extends MouseAdapter {
 	Panel panel;
 	
@@ -21,13 +21,18 @@ class MyListener extends MouseAdapter {
 		panel.y = e.getY();
 		panel.repaint();
 	}	
-}
+}*/
 
 class Panel extends JPanel {
 	int x, y;
 	public Panel() {
-		MyListener l = new MyListener(this);
-		this.addMouseMotionListener(l);
+		this.addMouseMotionListener(new MouseAdapter() {
+			public void mouseMoved(MouseEvent e) {
+				x = e.getX();
+				y = e.getY();
+				repaint();
+			}
+		});
 	}
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
