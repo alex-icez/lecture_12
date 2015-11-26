@@ -23,8 +23,8 @@ public class Test {
 				new MyFrame();
 			}
 		});
-		Integer arr[] = {1,2,3,4,5};
-		Arrays.sort(arr, (a, b) -> b - a);
+	//	Integer arr[] = {1,2,3,4,5};
+	//	Arrays.sort(arr, (a, b) -> b - a);
 		
 	}
 }
