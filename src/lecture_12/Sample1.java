@@ -23,6 +23,10 @@ class Frame extends JFrame {
 }
 
 class MyListener implements MouseMotionListener {
+	Panel panel;
+	public MyListener(Panel panel) {
+		this.panel = panel;
+	}
 	
 }
 
