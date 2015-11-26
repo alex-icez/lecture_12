@@ -2,7 +2,9 @@ package lecture_12;
 
 import java.awt.FlowLayout;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 
 
@@ -13,7 +15,7 @@ class Gnome extends JFrame {
 		setTitle("Gnome");
 		setSize(640, 480);
 		setLayout(new FlowLayout());
-		
+		label1 = new JLabel("Hello World", new ImageIcon("/home/sasha/Картинки/1--69/59.jpg"));
 		
 		
 		
