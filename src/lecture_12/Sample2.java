@@ -6,9 +6,11 @@ import javax.swing.JFrame;
 
 class Gnome extends JFrame {
 	public Gnome() {
+		setTitle("Gnome");
+		setSize(640, 480);
 		
 		
-		
+		setVisible(true);
 	}
 }
 
