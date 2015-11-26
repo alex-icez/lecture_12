@@ -13,10 +13,10 @@ import javax.swing.SwingUtilities;
 class MyPanel extends JPanel {
 	public void paintComponents(Graphics g) {
 		super.paintComponents(g);
+		System.out.println("paint");
 		g.setColor(Color.BLACK);
 		g.drawRect(10, 10, 100, 100);
 	}
-	
 }
 
 class MyFrame extends JFrame {
@@ -28,7 +28,6 @@ class MyFrame extends JFrame {
 		panel = new MyPanel();
 		add(panel);
 		setVisible(true);
-		repaint();
 	}
 }
 
