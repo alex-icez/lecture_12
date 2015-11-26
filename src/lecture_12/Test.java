@@ -1,5 +1,6 @@
 package lecture_12;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -12,6 +13,7 @@ import javax.swing.SwingUtilities;
 class MyPanel extends JPanel {
 	public void paintComponents(Graphics g) {
 		super.paintComponents(g);
+		g.setColor(Color.BLACK);
 		g.drawRect(10, 10, 100, 100);
 	}
 	
