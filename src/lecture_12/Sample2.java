@@ -13,6 +13,8 @@ import javax.swing.JList;
 import javax.swing.JTextField;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
 class Gnome extends JFrame {
 	private JLabel label1;
@@ -61,6 +63,13 @@ class Gnome extends JFrame {
 		add(b1);
 		Integer arr[] = {1,2,3,4,5,6,7};
 		list = new JList<>(arr);
+		
+		list.addListSelectionListener(new ListSelectionListener() {
+			@Override
+			public void valueChanged(ListSelectionEvent e) {
+				label1.setText("select" + list.getSelectedValue());
+			}
+		});;
 		
 		add(list);
 		
