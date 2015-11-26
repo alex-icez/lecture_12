@@ -22,7 +22,7 @@ class MyListener extends MouseAdapter {
 		panel.repaint();
 	}	
 }*/
-
+/*
 class Panel extends JPanel {
 	int x, y;
 	public Panel() {
@@ -40,9 +40,9 @@ class Panel extends JPanel {
 		g.drawString("(" + x + ", " + y + ")", x, y);
 	}
 }
-
+*/
 class Frame extends JFrame {
-	Panel panel;
+	int x, y;
 	
 	public Frame() {
 		setSize(640, 480);
