@@ -16,7 +16,7 @@ class Gnome extends JFrame {
 		setSize(640, 480);
 		setLayout(new FlowLayout());
 		label1 = new JLabel("Hello World", 
-				new ImageIcon("/home/sasha/Картинки/1--69/59.jpg"), 
+				new ImageIcon("/home/sasha/Картинки/1--69/5.jpg"), 
 				JLabel.HORIZONTAL);
 		add(label1);
 		setVisible(true);
