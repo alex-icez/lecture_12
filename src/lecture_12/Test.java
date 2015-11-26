@@ -2,6 +2,7 @@ package lecture_12;
 
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 
 class MyFrame extends JFrame {
 	public MyFrame() {
@@ -13,6 +14,10 @@ class MyFrame extends JFrame {
 
 public class Test {
 	public static void main(String[] args) {
-		new MyFrame();
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new MyFrame();
+			}
+		});
 	}
 }
