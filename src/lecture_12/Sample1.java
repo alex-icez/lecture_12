@@ -10,6 +10,10 @@ import javax.swing.JPanel;
 
 class Panel extends JPanel {
 	int x, y;
+	public Panel() {
+		MyListener l = new MyListener(this);
+		this.addMouseMotionListener(l);
+	}
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		g.drawString("(" + x + ", " + y + ")", x, y);
@@ -21,6 +25,8 @@ class Frame extends JFrame {
 	
 	public Frame() {
 		setSize(640, 480);
+		panel = new Panel();
+		add(panel);	
 		setVisible(true);
 	}
 }
