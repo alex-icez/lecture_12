@@ -59,10 +59,10 @@ class Gnome extends JFrame {
 			}
 		});
 		add(b1);
+		Integer arr[] = {1,2,3,4,5,6,7};
+		list = new JList<>(arr);
 		
-		
-		
-		
+		add(list);
 		
 		
 		add(button1);
