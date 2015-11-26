@@ -23,6 +23,7 @@ class Gnome extends JFrame {
 				JLabel.HORIZONTAL);
 		add(label1);
 		button1 = new JButton("Start");
+		button1.setRolloverSelectedIcon(new ImageIcon("/home/sasha/Картинки/1--69/5.jpg"));
 		
 		add(button1);
 		setVisible(true);
