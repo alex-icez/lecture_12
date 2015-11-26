@@ -9,8 +9,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-
-
 class MyPanel extends JPanel {
 	public void paintComponents(Graphics g) {
 		super.paintComponents(g);
@@ -20,11 +18,14 @@ class MyPanel extends JPanel {
 }
 
 class MyFrame extends JFrame {
+	MyPanel panel;
+	
 	public MyFrame() {
-		this.setTitle("Окно в мир!!!");
-		this.setSize(640, 480);
-		
-		this.setVisible(true);
+		setTitle("Окно в мир!!!");
+		setSize(640, 480);
+		panel = new MyPanel();
+		add(panel);
+		setVisible(true);
 	}
 }
 
