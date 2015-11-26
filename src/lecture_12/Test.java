@@ -24,7 +24,11 @@ public class Test {
 			}
 		});
 		int arr[] = {1,2,3,4,5};
-		Arrays.sort(arr, new Comparator<T>() {
+		Arrays.sort(arr, new Comparator<Integer>() {
+			public int compare(T o1, T o2) {
+				
+				return 0;
+			}
 		});
 		
 	}
