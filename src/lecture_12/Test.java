@@ -11,9 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 class MyPanel extends JPanel {
-	public void paintComponents(Graphics g) {
+	public void paintComponent(Graphics g) {
 		super.paintComponents(g);
-		System.out.println("paint");
 		g.setColor(Color.BLACK);
 		g.drawRect(10, 10, 100, 100);
 	}
