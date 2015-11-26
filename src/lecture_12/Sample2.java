@@ -20,7 +20,7 @@ class Gnome extends JFrame {
 	private JButton button1;
 	private JTextField textField1;
 	private JCheckBox b1;
-	private JCheckBox b2;
+	
 	public Gnome() {
 		setTitle("Gnome");
 		setSize(640, 480);
@@ -46,6 +46,9 @@ class Gnome extends JFrame {
 			}
 		});
 		add(textField1);
+		
+		b1 = new JCheckBox("Insert!!");
+		
 		
 		
 		add(button1);
