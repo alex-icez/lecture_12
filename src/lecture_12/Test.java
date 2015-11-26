@@ -33,8 +33,8 @@ class MyFrame extends JFrame {
 		setTitle("Окно в мир!!!");
 		setSize(640, 480);
 		panel = new MyPanel();
-		setUndecorated(true);
-		setBackground(new Color(0,0,255,340));
+		//setUndecorated(true);
+		//setBackground(new Color(0,0,255,340));
 		add(panel);
 		setVisible(true);
 		repaint();
