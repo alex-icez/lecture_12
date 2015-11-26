@@ -18,7 +18,6 @@ class MyPanel extends JPanel {
 		super.paintComponents(g);
 		Graphics2D g2 = (Graphics2D)g;
 		g2.setStroke(new BasicStroke(4));
-	
 		g.setColor(new Color(getWidth() % 256, getWidth() % 256, getHeight() % 256));
 		g.fillRect(10, 10, getWidth() / 4, getHeight() / 4);
 		g.drawString("Hello World", getWidth() / 4, getHeight() / 4);	
@@ -34,6 +33,7 @@ class MyFrame extends JFrame {
 		setTitle("Окно в мир!!!");
 		setSize(640, 480);
 		panel = new MyPanel();
+
 		add(panel);
 		setVisible(true);
 		repaint();
