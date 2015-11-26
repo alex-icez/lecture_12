@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -18,6 +19,8 @@ class Gnome extends JFrame {
 	private JLabel label1;
 	private JButton button1;
 	private JTextField textField1;
+	private JCheckBox b1;
+	private JCheckBox b2;
 	public Gnome() {
 		setTitle("Gnome");
 		setSize(640, 480);
@@ -42,7 +45,6 @@ class Gnome extends JFrame {
 				textField1.setText("");
 			}
 		});
-		
 		add(textField1);
 		
 		
